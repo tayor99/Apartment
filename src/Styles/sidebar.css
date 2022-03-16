@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+  overflow: auto;
+  border-right: 1px solid rgba(191, 191, 191, 0.9);
+}
+.list-container {
+  width: 70%;
+  margin: 50px auto;
+}
+.list-container .logo {
+  margin-bottom: 80px;
+}
+.list-container .logo > p {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.list-container .logo > p span {
+  background-color: #4b26f0;
+  color: #fff;
+  padding: 6px 10px;
+  margin: 6px;
+  font-weight: 800;
+  border-radius: 8px;
+}
+.list-container li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.list-container li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: silver;
+  opacity: 2;
+  font-weight: 600;
+}

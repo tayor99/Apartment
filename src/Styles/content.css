@@ -1,0 +1,45 @@
+.content-container {
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  /* width: 100%; */
+  padding: 20px;
+  border-radius: 20px;
+}
+.content-container .apartment-image {
+  margin-right: 30px;
+}
+.apartment-info {
+  width: 60%;
+}
+.content-container .apartment-image img {
+  width: 130px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.info-header h1 {
+  color: #2a36e8;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.info-header p {
+  color: silver;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.info-body {
+  display: flex;
+  height: 70%;
+  align-items: end;
+  justify-content: space-between;
+}
+.info-details h4 {
+  color: silver;
+  font-size: 0.8rem;
+}
+.info-details h3 {
+  color: #8c8c8c;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
