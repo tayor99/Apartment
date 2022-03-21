@@ -1,5 +1,6 @@
-import React from 'react';
+import { React, useState } from 'react';
 import '../Styles/content.css';
+import SideModal from './SideMdal';
 
 const buildingDetails = [
   {
@@ -19,7 +20,7 @@ const buildingDetails = [
     noiseLevel: '59 db',
   },
   {
-    id: 0,
+    id: 2,
     name: '84 Vista Street',
     address: '84 Vista Street, Encinities, Washington',
     apartment: `https://i0.wp.com/businessday.ng/wp-content/uploads/2019/11/Airbnb-in-Nigeria.jpg?fit=639%2C426&ssl=1`,
@@ -62,7 +63,16 @@ const apartment = buildingDetails.map((detail) => {
 });
 
 const Content = () => {
-  return <div>{apartment}</div>;
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div>
+      <div className="apartment-container" onClick={() => setIsOpen(true)}>
+        {apartment}
+      </div>
+
+      <SideModal opening={isOpen} closeSideBar={() => setIsOpen(false)} />
+    </div>
+  );
 };
 
 export default Content;
